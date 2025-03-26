@@ -1,7 +1,5 @@
 
----
 
-```markdown
 # Face Swap Tool (Image & Multi-Video Support)
 
 This project provides a web-based interface for swapping faces in images and videos. It uses a custom face-swapping model and supports both image-to-image and image-to-multi-video modes. The app is fully containerized with Docker Compose for easy setup.
