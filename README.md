@@ -22,8 +22,8 @@ This project provides a web-based interface for swapping faces in images and vid
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/face-swap-tool.git
-cd face-swap-tool
+git clone https://github.com/Nahid-Ahsan/dg-fs.git
+cd dg-fs
 ```
 
 ### 2. Build and Run with Docker Compose
