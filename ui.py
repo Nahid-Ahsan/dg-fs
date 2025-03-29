@@ -9,7 +9,7 @@ from media_toolkit import VideoFile
 
 f2f = Face2Face()
 
-def imgswap(source_path, target_path, enhance=False, output_folder='poc_outputss'):
+def imgswap(source_path, target_path, enhance=False, output_folder='output_folder'):
     enhance_model = 'gpen_bfr_2048' if enhance else None
     os.makedirs(output_folder, exist_ok=True)
     swapped_img = f2f.swap_img_to_img(source_path, target_path, enhance_face_model=enhance_model)
@@ -17,7 +17,7 @@ def imgswap(source_path, target_path, enhance=False, output_folder='poc_outputss
     cv2.imwrite(output_path, cv2.cvtColor(swapped_img, cv2.COLOR_RGB2BGR))
     return output_path
 
-def multi_vidswap(source_path, target_paths, enhance=False, output_folder='poc_outputss'):
+def multi_vidswap(source_path, target_paths, enhance=False, output_folder='output_folder'):
     enhance_model = 'gpen_bfr_2048' if enhance else None
     source_img = cv2.imread(source_path)
     f2f.add_face("caprio", source_img, save=True)
